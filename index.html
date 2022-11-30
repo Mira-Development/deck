@@ -7,12 +7,31 @@
     <link rel="stylesheet" href="index.css">
   </head>
 
+  <style media="all">
+    .mobile-display{display:none}
+    .desktop-display{display:contents}
+    @media (max-width:800px){
+    .desktop-display {display:none}
+    .mobile-display {display:contents}
+    }
+  </style>
+
   <body>
-    <center>
-      <a style="color: lightgray; font-family:verdana; text-decoration:none; font-weight: 200;" href="./assets/Mira Finance Deck.pdf">viewing on mobile? click here.</a>
-    </center>
-    <object data="./assets/Mira_Finance_Deck.pdf" type="application/pdf" frameborder="0" width="100%" height="100%" style="padding: 0px;">
-    </object>
+    <div class="mobile-display">
+      <br>
+      <center>
+        <a style="color: lightgray; font-family:verdana; text-decoration:none; font-weight: 200; font-size: 200%;
+          "href="./assets/Mira_Finance_Deck.pdf">viewing on mobile? click here.</a>
+        <br>
+        <img width="50%" src="./assets/mira-logo-white.png" alt="Mira Finance Logo">
+      </center>
+      
+    </div>
+    
+    <div class="desktop-display">
+      <object data="./assets/Mira_Finance_Deck.pdf" type="application/pdf" frameborder="0" width="100%" height="100%" style="padding: 0px;">
+      </object>
+    </div>
   </body>
   
   <!-- <object data='./assets/Mira Finance Deck (1).pdf'>
